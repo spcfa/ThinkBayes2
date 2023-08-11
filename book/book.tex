@@ -20,9 +20,12 @@
 %%%% Both LATEX and PLASTEX
 
 \usepackage{booktabs}
-
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{makeidx}
 \usepackage{graphicx}
 \usepackage{setspace}
+\usepackage{fancyhdr}
 
 \usepackage{amsmath}
 \usepackage{amsthm}
@@ -80,8 +83,11 @@
 %%%% LATEX/HTML ONLY
 \else
 
+\makeindex
+
 %BEGIN LATEX
 \usepackage{comment}
+\usepackage{url}
 \excludecomment{htmlonly}
 \includecomment{latexonly}
 %END LATEX
